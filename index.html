@@ -2,48 +2,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tanvi's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #eef2ff;
-            text-align: center;
-            padding: 30px;
-        }
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            max-width: 650px;
-            margin: auto;
-        }
-        h1 { color: #334eac; }
-        h2 { color: #5267a8; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tanvi Sunil Musale | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f3ff;
+    color: #263760;
+    line-height: 1.7;
+    padding: 30px 16px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(50, 65, 130, 0.10);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 65px 25px 55px;
+    background: linear-gradient(135deg, #e5e9ff, #f8f6ff, #e4f5ff);
+}
+
+header h1 {
+    font-size: 42px;
+    color: #344db5;
+    margin-bottom: 8px;
+    line-height: 1.3;
+}
+
+header h3 {
+    font-size: 21px;
+    color: #6878cb;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 18px;
+    font-size: 17px;
+}
+
+/* Main sections */
+main {
+    padding: 15px 45px 35px;
+}
+
+section {
+    padding: 28px 0;
+    border-bottom: 1px solid #e6e9fa;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-size: 27px;
+    color: #344b9b;
+    margin-bottom: 18px;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #505b78;
+}
+
+/* Skills */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    background: #edf0ff;
+    color: #354ca4;
+    padding: 11px 18px;
+    border-radius: 12px;
+    font-size: 15px;
+    border: 1px solid #e0e5ff;
+}
+
+/* Projects */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    padding: 24px;
+    border-radius: 16px;
+    background: #f6f5ff;
+    border: 1px solid #e9e7ff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(70, 80, 150, 0.10);
+}
+
+.project-card h3 {
+    color: #344b9b;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.project-card p {
+    color: #58627c;
+    font-size: 15px;
+}
+
+.project-label {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 5px 12px;
+    background: #e3e9ff;
+    color: #354ca4;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+/* Education */
+.education-card {
+    background: #f6f7ff;
+    padding: 22px;
+    border-radius: 15px;
+}
+
+.education-card h3 {
+    color: #344b9b;
+    margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+    background: #eef0ff;
+    text-align: center;
+    padding: 22px 15px;
+    color: #6471a8;
+    font-size: 14px;
+}
+
+/* Mobile friendly */
+@media (max-width: 650px) {
+    body {
+        padding: 12px;
+    }
+
+    header {
+        padding: 45px 18px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header h3 {
+        font-size: 17px;
+    }
+
+    main {
+        padding: 10px 22px 25px;
+    }
+
+    .section-title {
+        font-size: 23px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .skill {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <div class="card">
+
+<div class="container">
+
+    <header>
         <h1>Tanvi Sunil Musale</h1>
-        <h2>SY Integrated B.Tech Student</h2>
+        <h3>SY Integrated B.Tech Student</h3>
         <p>Welcome to my personal portfolio!</p>
+    </header>
 
-        <h2>About Me</h2>
-        <p>I am a student at Sanjivani University, Kopargaon.</p>
+    <main>
 
-        <h2>My Skills</h2>
-        <p>C++ | HTML | CSS</p>
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                Hello! I am Tanvi Sunil Musale, a SY Integrated
+                B.Tech student at Sanjivani University, Kopargaon.
+                I am interested in programming, technology and
+                web development. I enjoy learning new concepts
+                and developing my technical skills.
+            </p>
+        </section>
 
-        <h2>My Projects</h2>
-        <p>8086 Digital Calculator</p>
-        <p>CPU Instruction Cycle Simulator</p>
+        <section id="skills">
+            <h2 class="section-title">My Skills</h2>
 
-        <h2>Education</h2>
-        <p>Integrated B.Tech</p>
+            <div class="skills">
+                <span class="skill">C++</span>
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">Git &amp; GitHub</span>
+                <span class="skill">Web Development Basics</span>
+                <span class="skill">8086 Microprocessor Basics</span>
+                <span class="skill">Problem Solving</span>
+                <span class="skill">Teamwork</span>
+            </div>
+        </section>
 
-        <h2>Contact</h2>
-        <p>Thank you for visiting my portfolio!</p>
-    </div>
+        <section id="projects">
+            <h2 class="section-title">My Projects</h2>
+
+            <div class="projects">
+
+                <div class="project-card">
+                    <h3>8086 Digital Calculator</h3>
+                    <p>
+                        A virtual calculator project based on
+                        8086 microprocessor concepts, designed
+                        to demonstrate basic arithmetic operations.
+                    </p>
+                    <span class="project-label">
+                        Microprocessor
+                    </span>
+                </div>
+
+                <div class="project-card">
+                    <h3>CPU Instruction Cycle Simulator</h3>
+                    <p>
+                        A simple educational simulator that
+                        demonstrates the CPU instruction cycle,
+                        including fetch, decode and execute stages.
+                    </p>
+                    <span class="project-label">
+                        HTML &amp; CSS
+                    </span>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>
+                        My personal website showcasing my education,
+                        technical skills, projects and interests.
+                    </p>
+                    <span class="project-label">
+                        HTML &amp; CSS
+                    </span>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education-card">
+                <h3>Integrated B.Tech</h3>
+                <p>Sanjivani University, Kopargaon</p>
+                <p>Second Year Student</p>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2 class="section-title">My Interests</h2>
+            <p class="about-text">
+                Programming, learning new technologies,
+                web development and working on projects.
+            </p>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Thank You!</h2>
+            <p class="about-text">
+                Thank you for visiting my portfolio.
+                I look forward to learning, creating and growing
+                as a technology student.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2026 Tanvi Sunil Musale | Personal Portfolio
+    </footer>
+
+</div>
+
 </body>
 </html>
